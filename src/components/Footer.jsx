@@ -5,7 +5,7 @@ const Footer = () => {
     const location = useLocation();
 
     return (
-        <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-8 min-h-32 flex flex-col items-center">
+        <footer className="footer sm:footer-horizontal bg-[#050a30] text-base-content p-8 min-h-32 flex flex-col items-center">
             {location.pathname !== "/contact" && (
             <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-6">
                 <nav className="flex flex-col justify-center col-span-1">
