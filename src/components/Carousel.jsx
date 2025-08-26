@@ -96,7 +96,7 @@ const Carousel = () => {
 
     return (
         <div className="flex flex-col justify-center items-center mt-8 w-full">
-            <div className="flex text-[#050a30] font-bold text-3xl my-4">
+            <div className="flex text-[#050a30] font-bold text-3xl my-4 text-center">
                 <h1>MINDROID - Digital Magazine</h1>
             </div>
             <div className="carousel w-[55vw] h-[70vh] max-w-full aspect-[16/6] overflow-hidden rounded-2xl shadow-2xl/30 ring-1 ring-primary/10 relative mx-auto flex justify-center items-center">
