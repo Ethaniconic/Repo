@@ -9,7 +9,7 @@ const Footer = () => {
             {location.pathname !== "/contact" && (
             <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-6">
                 <nav className="flex flex-col justify-center col-span-1">
-                    <h6 className="footer-title text-base font-bold mb-4">Technical Support</h6>
+                    <h6 className="footer-title text-base font-bold mb-4 text-white">Technical Support</h6>
                     <div className="flex flex-col space-y-4">
                         <div className="flex flex-col bg-gray-800/50 p-4 rounded-lg">
                             <p className="font-semibold text-white text-sm">Swadhin Upadhyay</p>
@@ -31,7 +31,7 @@ const Footer = () => {
                 {/* Only show the map if NOT on the contact page */}
                 
                     <nav className="flex flex-col justify-center">
-                        <h6 className="footer-title text-lg font-bold mb-4">Maps</h6>
+                        <h6 className="footer-title text-lg font-bold mb-4 text-white">Maps</h6>
                         <div className="w-full h-64 rounded-lg shadow-lg overflow-hidden border-2 border-blue-600">
                             <iframe
                                 title="SVPCET Location"
@@ -47,7 +47,7 @@ const Footer = () => {
                     </nav>
                 
                 <nav className="flex flex-col items-center justify-center">
-                    <h6 className="footer-title text-lg font-bold mb-4">Social</h6>
+                    <h6 className="footer-title text-lg font-bold mb-4 text-white">Social</h6>
                     <div className="flex gap-6">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/svpcetnagpur?igsh=MTljYWpqM2Y3M21qaw==" className="hover:scale-110 transition-transform">
                             {/* Instagram SVG */}
