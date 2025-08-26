@@ -2,17 +2,17 @@ import React from "react";
 
 const images = [
   {
-    src: "./src/assets/IDEA3_1.webp",
+    src: "/images/IDEA3_1.webp",
     caption: "IDEA3",
     ratio: "row-span-2 col-span-2",
   },
   {
-    src: "./src/assets/IDEA3_2.webp",
+    src: "/images/IDEA3_2.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "./src/assets/IDEA3_3.webp",
+    src: "/images/IDEA3_3.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
@@ -22,12 +22,12 @@ const images = [
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "./src/assets/IDEA3_4.webp",
+    src: "/images/IDEA3_4.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "./src/assets/IDEA3_3.webp",
+    src: "/images/IDEA3_3.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
