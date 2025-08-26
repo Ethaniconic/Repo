@@ -17,7 +17,7 @@ const magazines = [
     description: "",
     month: "Year",
     year: "2023-24",
-    cover: "/images/MINDROID%202023-24/MINDROID%202023-24_1.webp",
+    cover: "/images/MINDROID_2023-24/MINDROID%202023-24_1.webp",
     goto: "/mindroid_23-24.html",
     },
 ];
