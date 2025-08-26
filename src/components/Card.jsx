@@ -10,7 +10,7 @@ const magazines = [
     month: "July-August",
     year: "2025",
     cover: "/images/MINDROID_2025/MINDROID-2025-JULY.webp",
-    goto: "../../mindroid_25-july.html",
+    goto: "/mindroid_25-july.html",
   },
   {
     title: "Mindroid 2023-24",
@@ -18,7 +18,7 @@ const magazines = [
     month: "Year",
     year: "2023-24",
     cover: "/images/MINDROID%202023-24/MINDROID%202023-24_1.webp",
-    goto: "../../mindroid_23-24.html",
+    goto: "/mindroid_23-24.html",
     },
 ];
 const Card = () => {
