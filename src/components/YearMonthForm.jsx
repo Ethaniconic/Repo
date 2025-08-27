@@ -18,15 +18,6 @@ const YearMonthForm = () => {
     e.preventDefault(); // prevent page reload
 
     // Check condition
-    if (selectedYear === "2025" && selectedMonth === "July-August") {
-      // Open the HTML file in the same tab
-      window.location.href = "/mindroid_july-august_2025.html";
-
-      // Or open in new tab:
-      // window.open("/mindroid_23-24.html", "_blank");
-    } else {
-      alert(`Selected: ${selectedYear} - ${selectedMonth}`);
-    }
 
     if (selectedYear === "2023-2024" && selectedMonth === "Jan - Dec") {
       // Open the HTML file in the same tab
