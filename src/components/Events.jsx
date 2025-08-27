@@ -2,38 +2,38 @@ import React from "react";
 
 const images = [
   {
-    src: "/images/IDEA3_1.webp",
+    src: "src/assets/IDEA3_1.webp",
     caption: "IDEA3",
     ratio: "row-span-2 col-span-2",
   },
   {
-    src: "/images/IDEA3_2.webp",
+    src: "src/assets/IDEA3_2.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "/images/IDEA3_3.webp",
+    src: "src/assets/IDEA3_3.webp0",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "",
-    caption: "Sports Day",
+    src: "src/assets/placment_orent.webp",
+    caption: "Placement Orientation for Final Year Students",
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "/images/IDEA3_4.webp",
+    src: "src/assets/IDEA3_4.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "/images/IDEA3_3.webp",
-    caption: "IDEA3",
+    src: "src/assets/salesforce.jpeg",
+    caption: "Salesforce Workshop",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
-    caption: "Workshop on AI",
+    src: "src/assets/code_decode.jpeg",
+    caption: "<CODE DECODE>",
     ratio: "row-span-1 col-span-1",
   },
 ];
