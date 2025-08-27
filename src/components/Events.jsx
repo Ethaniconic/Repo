@@ -32,7 +32,7 @@ const images = [
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "src/assets/code_decode.webp",
+    src: "public/code_decode.webp",
     caption: "<CODE DECODE>",
     ratio: "row-span-1 col-span-1",
   },
