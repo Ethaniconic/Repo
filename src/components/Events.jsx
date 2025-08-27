@@ -27,12 +27,12 @@ const images = [
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "src/assets/salesforce.jpeg",
+    src: "src/assets/salesforce.webp",
     caption: "Salesforce Workshop",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "src/assets/code_decode.jpeg",
+    src: "src/assets/code_decode.webp",
     caption: "<CODE DECODE>",
     ratio: "row-span-1 col-span-1",
   },
