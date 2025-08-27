@@ -13,7 +13,7 @@ const App = () => {
     <Router>
       <div className='overflow-x-hidden bg-zinc-200 flex flex-col items-center'>
         <Navbar />
-        <main>
+        <main className="pt-12">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/archives" element={<Magazines />} />

@@ -21,7 +21,7 @@ const magazines = [
 const Magazines = () => {
     return (
         <div className="w-[95vw] flex flex-col gap-8 items-center my-10 px-2 md:px-32">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-32 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-16 md:gap-32 w-full">
                 {magazines.map((mag, idx) => (
                     <div
                         key={idx}

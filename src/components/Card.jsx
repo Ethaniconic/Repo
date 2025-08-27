@@ -28,7 +28,7 @@ const Card = () => {
         {magazines.map((mag, idx) => {
           const CardContent = (
             <div
-              className="card w-80 bg-[#10194a] shadow-xl border border-primary/20 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
+              className="card w-full sm:w-80 bg-[#10194a] shadow-xl border border-primary/20 hover:scale-105 hover:shadow-2xl transition-transform duration-300 rounded-3xl cursor-pointer"
             >
               <figure className="h-48 overflow-hidden rounded-t-3xl">
                 <img
