@@ -95,7 +95,7 @@ const Footer = () => {
             <hr className="w-full border-t border-white mb-3" />
             <div className="w-full flex justify-center items-center">
                 <span className="text-white text-sm text-center">
-                    © 2025 College Magazine. All rights reserved.
+                    © 2025 Department of Computer Engineering ,SVPCET, Nagpur. All rights reserved.
                 </span>
             </div>
         </footer>

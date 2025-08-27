@@ -10,7 +10,7 @@ const magazines = [
     month: "July-August",
     year: "2025",
     cover: "/images/MINDROID_2025/MINDROID-2025-JULY.webp",
-    goto: "/mindroid_25-july.html",
+    goto: "/mindroid_july-august_2025.html",
   },
   {
     title: "Mindroid 2023-24",
