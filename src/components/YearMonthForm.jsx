@@ -25,9 +25,10 @@ const YearMonthForm = () => {
 
       // Or open in new tab:
       // window.open("/mindroid_23-24.html", "_blank");
+    } else if (selectedYear === "2025" && selectedMonth === "July - August"){
+      window.location.href = "/mindroid_23-24.html";
     } else {
-      alert(`Selected: ${selectedYear} - ${selectedMonth}`);
-    }
+      alert(`No Magazine available!`);
   };
 
   return (
