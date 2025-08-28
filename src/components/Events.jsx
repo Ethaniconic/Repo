@@ -2,37 +2,37 @@ import React from "react";
 
 const images = [
   {
-    src: "/src/assets/IDEA3_1.webp",
+    src: "/images/IDEA3_1.webp",
     caption: "IDEA3",
     ratio: "row-span-2 col-span-2",
   },
   {
-    src: "/src/assets/IDEA3_2.webp",
+    src: "/images/IDEA3_2.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "/src/assets/IDEA3_3.webp0",
+    src: "/images/IDEA3_3.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "/src/assets/placment_orent.webp",
+    src: "/images/placment_orent.webp",
     caption: "Placement Orientation for Final Year Students",
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "/src/assets/IDEA3_4.webp",
+    src: "/images/IDEA3_4.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "/src/assets/salesforce.webp",
+    src: "/images/salesforce.webp",
     caption: "Salesforce Workshop",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "/src/assets/code_decode.webp",
+    src: "/images/code_decode.webp",
     caption: "<CODE DECODE>",
     ratio: "row-span-1 col-span-1",
   },

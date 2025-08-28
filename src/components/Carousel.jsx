@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import FirstPage from "../assets/FirstPage.webp"
 import SecondPage from "../assets/IV_2A_2025.webp"
 import ThirdPage from "../assets/IV_2B_2025.webp"
-import FourthPage from "../assets/placment_orent.webp"
+import FourthPage from "/images/placment_orent.webp"
 import FifthPage from "../assets/ACM_Elections.webp"
 
 const slides = [
