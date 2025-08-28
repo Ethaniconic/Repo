@@ -5,8 +5,8 @@ const magazines = [
         title: "Mindroid 2025 July-August",
         month: "July-August",
         year: "2025",
-        cover: "/images/MINDROID_2025/MINDROID-2025-JULY.webp",
-        goto: "/mindroid_25-july.html",
+        cover: "/images/MINDROID_July-August_2024-25/MINDROID_July-August_2024-25_1.webp",
+        goto: "/mindroid_july-august_2025.html",
     },
     {
         title: "Mindroid 2023-24",
@@ -21,7 +21,7 @@ const magazines = [
 const Magazines = () => {
     return (
         <div className="w-[95vw] flex flex-col gap-8 items-center my-10 px-2 md:px-32">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-32 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-16 md:gap-32 w-full">
                 {magazines.map((mag, idx) => (
                     <div
                         key={idx}

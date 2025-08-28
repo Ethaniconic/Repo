@@ -1,30 +1,41 @@
-import React, { useEffect, useState } from 'react'
-import Logo from '../assets/Logo.png'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import NewLogo from '../assets/SVPCET_logo_New.webp';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [theme, setTheme] = useState(
         localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
-    )
+    );
+    const location = useLocation();
 
     const handleToggle = (e) => {
         if (e.target.checked) {
-            setTheme('dark')
+            setTheme('dark');
         } else {
-            setTheme('light')
+            setTheme('light');
         }
-    }
+    };
 
     useEffect(() => {
-        localStorage.setItem('theme', theme)
-        const localTheme = localStorage.getItem('theme')
-        document.querySelector('html').setAttribute('data-theme', localTheme)
+        localStorage.setItem('theme', theme);
+        const localTheme = localStorage.getItem('theme');
+        document.querySelector('html').setAttribute('data-theme', localTheme);
         if (localTheme === 'dark') {
-            document.querySelector('html').classList.add('dark')
+            document.querySelector('html').classList.add('dark');
         } else {
-            document.querySelector('html').classList.remove('dark')
+            document.querySelector('html').classList.remove('dark');
         }
-    }, [theme])
+    }, [theme]);
+
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 0);
+    }, [location.pathname]);
+
+    const closeDrawer = () => {
+        document.getElementById('my-drawer-3').checked = false;
+    };
 
     return (
         <div className="drawer">
@@ -52,8 +63,11 @@ const Navbar = () => {
                     </div>
                     {/* Logo and Title */}
                     <div className="mx-2 flex-1 px-2 flex items-center gap-3">
-                        <img src={Logo} width={'64px'} className='bg-blue-500/90 p-1 rounded-full shadow-[0_15px_25px_-20px_rgb(255,255,255,1)] ring-2 ring-accent/50' alt="Clg_logo" />
-                        <span className='sm:block text-xl md:text-2xl font-semibold tracking-tight text-blue-100'>St. Vincent Pallotti College of Engineering and Technology</span>
+                        <img src={NewLogo} width={'90px'} className='p-1 rounded-full' alt="Clg_logo" />
+                        <div>
+                          <span className='hidden sm:block text-xl md:text-2xl font-semibold tracking-tight text-blue-100'>St. Vincent Pallotti College of Engineering and Technology - Department Of Computer Engineering</span>
+                          <span className='block sm:hidden text-l md:text-xl font-semibold tracking-tight text-blue-100'>SVPCET - Dept. Of Computer Engineering</span>
+                        </div>
                     </div>
                     {/* Desktop Menu */}
                     <div className="hidden flex-none lg:block">
@@ -81,26 +95,28 @@ const Navbar = () => {
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay h-full"></label>
                 <ul className="menu menu-lg min-h-full w-80 p-4 bg-base-100/90 backdrop-blur-md rounded-r-2xl shadow-2xl ring-1 ring-primary/10 gap-2 overflow-y-auto">
                     <div className='flex items-center gap-2 mb-4'>
-                        <img src={Logo} alt="" width="70px" />
-                        <h3 className="text-blue-900 font-bold text-zinc-200">St. Vincent Pallotti College of Engineering and Technology</h3>
+                        <img src={NewLogo} alt="" width="90px" />
+                        <div>
+                          <h3 className="text-blue-900 font-bold text-zinc-200">St. Vincent Pallotti College of Engineering and Technology - Department Of Computer Engineering</h3>
+                        </div>
                     </div>
                     <li>
-                        <Link to="/" className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
+                        <Link to="/" onClick={closeDrawer} className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link to="/archives" className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
+                        <Link to="/archives" onClick={closeDrawer} className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
                             Archives
                         </Link>
                     </li>
                     <li>
-                        <Link to="/events" className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
+                        <Link to="/events" onClick={closeDrawer} className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
                             Events
                         </Link>
                     </li>
                     <li>
-                        <Link to="/contact" className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
+                        <Link to="/contact" onClick={closeDrawer} className="font-semibold text-blue-900 bg-blue-100/80 hover:bg-accent hover:text-white transition-colors duration-200 rounded-lg px-4 py-2">
                             Contact
                         </Link>
                     </li>
@@ -110,4 +126,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;

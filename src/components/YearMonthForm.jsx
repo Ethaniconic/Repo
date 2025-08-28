@@ -18,15 +18,19 @@ const YearMonthForm = () => {
     e.preventDefault(); // prevent page reload
 
     // Check condition
+
     if (selectedYear === "2023-2024" && selectedMonth === "Jan - Dec") {
       // Open the HTML file in the same tab
       window.location.href = "/mindroid_23-24.html";
 
       // Or open in new tab:
       // window.open("/mindroid_23-24.html", "_blank");
-    } else if (selectedYear === "2025" && selectedMonth === "July - August"){
+    } else if (selectedYear === "2025" && selectedMonth === "July - August") {
       window.location.href = "/mindroid_23-24.html";
-    }
+    } else if (selectedYear === "2025" && selectedMonth === "July") {
+    window.location.href = "/mindroid_july-august_2025.html";
+  } else {
+    alert(`No Magazine available!`);
   };
 
   return (

@@ -124,17 +124,17 @@ export default function Contact() {
           <h2 className="text-2xl font-bold text-white text-center mb-6">Technical Support</h2>
           <p className="text-center text-gray-300 mb-8">If you encounter any issues or have suggestions, please contact our technical team:</p>
           <div className="flex flex-wrap justify-center gap-8">
-            <div className="text-center">
+            <div className="bg-gray-800/50 p-4 rounded-lg flex flex-col items-center">
               <p className="font-semibold text-white">Swadhin Upadhyay</p>
               <p className="text-gray-400"><a href="mailto:swadhin457@gmail.com" className="text-blue-400 hover:underline">swadhin457@gmail.com</a></p>
               <p className="text-gray-400"><a href="tel:+918788546384" className="text-blue-400 hover:underline">+91 87885 46384</a></p>
             </div>
-            <div className="text-center">
+            <div className="bg-gray-800/50 p-4 rounded-lg flex flex-col items-center">
               <p className="font-semibold text-white">Nikita Bhushanwar</p>
               <p className="text-gray-400"><a href="mailto:niktabhushanwar03@gmail.com" className="text-blue-400 hover:underline">niktabhushanwar03@gmail.com</a></p>
-              <p className-="text-gray-400"><a href="tel:+919767445679" className="text-blue-400 hover:underline">+91 97674 45679</a></p>
+              <p className="text-gray-400"><a href="tel:+919767445679" className="text-blue-400 hover:underline">+91 97674 45679</a></p>
             </div>
-            <div className="text-center">
+            <div className="bg-gray-800/50 p-4 rounded-lg flex flex-col items-center">
               <p className="font-semibold text-white">Ethan Anthony</p>
               <p className="text-gray-400"><a href="mailto:e10anthony345@gmail.com" className="text-blue-400 hover:underline">e10anthony345@gmail.com</a></p>
               <p className="text-gray-400"><a href="tel:+918888080345" className="text-blue-400 hover:underline">+91 88880 80345</a></p>
