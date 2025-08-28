@@ -23,9 +23,9 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col bg-gray-800/50 p-4 rounded-lg">
                             <p className="font-semibold text-white text-sm">Ethan Anthony</p>
-                            <a href="mailto:e10anthony345@gmail.com" className="text-blue-400 hover:underline text-sm">e10anthony345@gmail.com</a>
+                            <a href="mailto:e10anthony345@gmail.com" className="text-blue-400 hover:underline text-sm">e10.anthony345@gmail.com</a>
                             <a href="tel:+918888080345" className="text-blue-400 hover:underline text-sm">+91 88880 80345</a>
-                        </div>
+                        </div>  
                     </div>
                 </nav>
                 {/* Only show the map if NOT on the contact page */}
@@ -46,7 +46,7 @@ const Footer = () => {
                         </div>
                     </nav>
                 
-                <nav className="flex flex-col items-center justify-center">
+                <nav className="flex flex-col justify-center">
                     <h6 className="footer-title text-lg font-bold mb-4 text-white">Social</h6>
                     <div className="flex gap-6">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/svpcetnagpur?igsh=MTljYWpqM2Y3M21qaw==" className="hover:scale-110 transition-transform">
@@ -95,7 +95,7 @@ const Footer = () => {
             <hr className="w-full border-t border-white mb-3" />
             <div className="w-full flex justify-center items-center">
                 <span className="text-white text-sm text-center">
-                    © 2025 Department of Computer Engineering ,SVPCET, Nagpur. All rights reserved.
+                    © 2025 Department of Computer Engineering, SVPCET, Nagpur. All rights reserved.
                 </span>
             </div>
         </footer>

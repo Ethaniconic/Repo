@@ -65,8 +65,8 @@ const Navbar = () => {
                     <div className="mx-2 flex-1 px-2 flex items-center gap-3">
                         <img src={NewLogo} width={'90px'} className='p-1 rounded-full' alt="Clg_logo" />
                         <div>
-                          <span className='hidden sm:block text-xl md:text-2xl font-semibold tracking-tight text-blue-100'>St. Vincent Pallotti College of Engineering and Technology - Department Of Computer Engineering</span>
-                          <span className='block sm:hidden text-l md:text-xl font-semibold tracking-tight text-blue-100'>SVPCET - Dept. Of Computer Engineering</span>
+                          <span className='hidden sm:block text-xl md:text-2xl font-semibold tracking-tight text-blue-100'>St. Vincent Pallotti College of Engineering & Technology - Department of Computer Engineering</span>
+                          <span className='block sm:hidden text-l md:text-xl font-semibold tracking-tight text-blue-100'>SVPCET - Department of Computer Engineering</span>
                         </div>
                     </div>
                     {/* Desktop Menu */}
@@ -97,7 +97,7 @@ const Navbar = () => {
                     <div className='flex items-center gap-2 mb-4'>
                         <img src={NewLogo} alt="" width="90px" />
                         <div>
-                          <h3 className="text-blue-900 font-bold text-zinc-200">St. Vincent Pallotti College of Engineering and Technology - Department Of Computer Engineering</h3>
+                          <h3 className="text-blue-900 font-bold text-zinc-200">St. Vincent Pallotti College of Engineering & Technology - Department of Computer Engineering</h3>
                         </div>
                     </div>
                     <li>

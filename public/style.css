@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background: #f1f1f1;
+    background: #f1f1f1; /* Lighter grey background to make the magazine pop */
     padding: 1rem;
 }
 
@@ -26,55 +26,55 @@ body {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    
+    overflow: hidden; /* Keeps the child elements within the rounded corners */
 }
 
+/* Scrollable tab container */
 .tab-container {
     padding: 1rem 1rem 0 1rem;
-    background-color: #f9fafb;
+    background-color: #f9fafb; /* A slightly off-white background for the tabs */
     border-bottom: 1px solid #e5e7eb;
-    overflow-x: hidden; /* Remove horizontal scroll */
+    overflow-x: auto; /* Enable horizontal scroll */
+    white-space: nowrap; /* Prevent wrapping of tabs */
+    align-content: center;
 }
 
-/* Override DaisyUI tabs to wrap instead of scrolling */
+/* Hide scrollbars for cleaner look */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
 .tabs {
-    display: flex;
-    flex-wrap: wrap; /* Allows tabs to wrap into multiple lines */
-    justify-content: center; /* Center align */
-    gap: 0.5rem; /* Add spacing between tabs */
+    display: inline-flex;
+    gap: 0.5rem; /* Space between tabs */
 }
 
-.tabs .tab {
-    flex: 1 1 auto; /* Auto size */
-    text-align: center;
-    white-space: nowrap; /* Keep text in one line */
-    min-width: max-content; /* Ensure text doesn't cut */
-}
-
-/* Reduce font size & padding on smaller screens */
-@media (max-width: 768px) {
-    .tabs .tab {
-        font-size: 0.85rem;
-        padding: 0.4rem 0.8rem;
-    }
+/* Final fix: Tabs adjust to text, single line, no cut */
+.tab {
+    white-space: nowrap !important; /* Keep text in one line */
+    min-width: max-content !important; /* Auto width based on text */
+    padding: 0.5rem 1rem 2rem; /* Adequate padding for readability */
+    font-size: clamp(0.8rem, 2vw, 1.25rem); /* min, preferred, max */
 }
 
 /* Flipbook container */
 .flipbook-container {
     padding: 1rem;
     position: relative;
-    align-items: center;
 }
 
 .flipbook {
     width: 100%;
     height: auto;
-    aspect-ratio: 842 / 595;
+    aspect-ratio: 842 / 595; /* Maintain aspect ratio */
 }
 
 .flipbook .hard {
-    background: #fff !important;
+    background: #ffff !important;
     color: #fff;
     font-weight: bold;
     border: none;
@@ -91,7 +91,6 @@ body {
     object-fit: cover;
 }
 
-/* Navigation buttons */
 .flipbook-nav {
     position: absolute;
     bottom: 2rem;
@@ -99,11 +98,17 @@ body {
     width: 100%;
     z-index: 100;
     padding: 0 1rem;
-    pointer-events: none;
-    display: flex;
-    justify-content: space-between;
+    pointer-events: none; /* Allow clicks to pass through the container */
 }
 
 .flipbook-nav .btn {
-    pointer-events: auto;
+    pointer-events: auto; /* Make buttons clickable */
+}
+
+/* Center tabs on larger screens */
+@media (min-width: 768px) {
+    .tab-container {
+        display: flex;
+        justify-content: center;
+    }
 }

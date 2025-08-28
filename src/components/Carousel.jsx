@@ -84,14 +84,14 @@ const Carousel = () => {
             {/* Buttons */}
             <div className="absolute left-4 right-4 bottom-4 flex justify-between">
               <button
-                className="btn btn-circle btn-accent btn-sm md:btn-md"
+                className="btn btn-circle bg-[#f89b54] btn-sm md:btn-md"
                 onClick={() => goTo((current - 1 + slides.length) % slides.length)}
                 type="button"
               >
                 ❮
               </button>
               <button
-                className="btn btn-circle btn-accent btn-sm md:btn-md"
+                className="btn btn-circle bg-[#f89b54] btn-sm md:btn-md"
                 onClick={() => goTo((current + 1) % slides.length)}
                 type="button"
               >
