@@ -26,7 +26,7 @@ const YearMonthForm = () => {
     } else if (selectedYear === "2025" && selectedMonth === "July - August") {
       window.location.href = "/mindroid_july-august_2025.html";
     }else if (selectedYear === "2025" && selectedMonth === "September") {
-      window.location.href = "public/mindroid_september_2025.html";
+      window.location.href = "/mindroid_september_2025.html";
     }else {
       alert(`No Magazine available!`);
     }
