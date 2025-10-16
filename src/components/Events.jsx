@@ -2,37 +2,37 @@ import React from "react";
 
 const images = [
   {
-    src: "/images/IDEA3_1.webp",
-    caption: "IDEA3",
+    src: "/images/event_gallery/teachersday_1.webp",
+    caption: "TEACHERS'S DAY CELEBRATION",
     ratio: "row-span-2 col-span-2",
   },
   {
-    src: "/images/IDEA3_2.webp",
+    src: "/images/event_gallery/teachersday_2.webp",
+    caption: "TEACHERS'S DAY CELEBRATION",
+    ratio: "row-span-1 col-span-1",
+  },
+  {
+    src: "/images/event_gallery/IDEA3_3.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "/images/IDEA3_3.webp",
-    caption: "IDEA3",
-    ratio: "row-span-1 col-span-1",
-  },
-  {
-    src: "/images/placment_orent.webp",
+    src: "/images/event_gallery/placment_orent.webp",
     caption: "Placement Orientation for Final Year Students",
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "/images/IDEA3_4.webp",
+    src: "/images/event_gallery/IDEA3_4.webp",
     caption: "IDEA3",
     ratio: "row-span-1 col-span-2",
   },
   {
-    src: "/images/salesforce.webp",
+    src: "/images/event_gallery/salesforce.webp",
     caption: "Salesforce Workshop",
     ratio: "row-span-1 col-span-1",
   },
   {
-    src: "/images/code_decode.webp",
+    src: "/images/event_gallery/code_decode.webp",
     caption: "<CODE DECODE>",
     ratio: "row-span-1 col-span-1",
   },
