@@ -10,7 +10,7 @@ const magazines = [
     description: "",
     month: "September",
     year: "2025",
-    cover: "public/images/MINDROID_September_2025/Sept_IIM_NGP.jpeg",
+    cover: "/images/MINDROID_September_2025/Sept_IIM_NGP.jpeg",
     goto: "/mindroid_september_2025.html",
     },
   {
