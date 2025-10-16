@@ -5,6 +5,14 @@ const encodePath = (path) => {
 }
 
 const magazines = [
+   {
+    title: "Mindroid 2025 September       ",
+    description: "",
+    month: "September",
+    year: "2025",
+    cover: "/images/MINDROID_July-August_2024-25/MINDROID_July-August_2024-25_1.webp",
+    goto: "/mindroid_september_2025.html",
+    },
   {
     title: "Mindroid 2025 July-August",
     month: "July-August",
@@ -18,7 +26,7 @@ const magazines = [
     month: "Year",
     year: "2023-24",
     cover: "/images/MINDROID_2023-24/MINDROID%202023-24_1.webp",
-    goto: "/mindroid_23-24.html",
+    goto: "/mindroid_23-24.html"
     },
 ];
 const Card = () => {
