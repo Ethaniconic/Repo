@@ -13,7 +13,7 @@ const YearMonthForm = () => {
   // Special month list depending on year selection
   const monthOptions =
     selectedYear === "2023-2024" ? ["Jan - Dec"] :
-    selectedYear === "2025" ? ["July - August"] :
+    selectedYear === "2025" ? ["July - August","September"] :
     allMonths;
 
   const handleSubmit = (e) => {
@@ -25,7 +25,9 @@ const YearMonthForm = () => {
       window.location.href = "/mindroid_23-24.html";
     } else if (selectedYear === "2025" && selectedMonth === "July - August") {
       window.location.href = "/mindroid_july-august_2025.html";
-    } else {
+    }else if (selectedYear === "2025" && selectedMonth === "September") {
+      window.location.href = "/mindroid_September_2025.html";
+    }else {
       alert(`No Magazine available!`);
     }
   }
